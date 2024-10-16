@@ -1,4 +1,4 @@
-# My Music and Poetry Website
+# My Personal Creative Website
 
 Welcome to my personal website, where I share my music and poetry! This platform is a creative outlet for my artistic expressions and a place to connect with others who appreciate the beauty of art.
 
