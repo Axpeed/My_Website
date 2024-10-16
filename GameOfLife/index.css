@@ -1,0 +1,40 @@
+body
+{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e6dec3;
+}
+
+#sketch-holder
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#button-holder
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+#resize-holder
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 5px;
+}
+
+canvas
+{
+    display: block;
+    resize: both;
+    overflow: auto;
+}
