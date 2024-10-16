@@ -1,0 +1,208 @@
+
+/*
+* Globals
+*/
+
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+color: #333;
+text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+
+/*
+* Base structure
+*/
+
+body {
+text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the scrollbar track (part that the thumb slides within) */
+::-webkit-scrollbar {
+  width: 16px; /* Width of the scrollbar */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #4c631a;
+}
+
+.cover-container {
+max-width: 42em;
+}
+
+
+/*
+* Header
+*/
+
+.nav-masthead .nav-link {
+color: rgba(255, 255, 255, .5);
+border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+margin-left: 1rem;
+}
+
+.nav-masthead .active {
+color: #fff;
+border-bottom-color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between; /* Space between left and right items */
+  align-items: center; /* Center items vertically */
+  padding: 0 20px; /* Horizontal padding for spacing */
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-left {
+  margin-right: 325px; /* Space between h3 and nav */
+}
+
+
+/* body */
+body {
+position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('content/socials.jpg');
+  background-size: cover;
+  background-position: top left;;
+  z-index: -1; /* Ensures the background stays behind all content */
+}
+
+.container {
+  position: relative;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+h1 {
+ margin-top: 50px;
+ text-align: center;
+}
+
+.socials-list {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.socials-list li {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.socials-list a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px; /* Adjust width as needed */
+    height: 60px; /* Adjust height as needed */
+    padding: 10px;
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1.25rem; /* Increase font size */
+    font-weight: bold; /* Optional, makes text bold */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-logo {
+    font-size: 2rem;
+    width: 2rem; /* Ensure the width is the same as height for a perfect circle */
+    height: 2rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 2rem; /* Aligns the icon vertically */
+}
+
+.socials-list a i {
+    margin-right: 10px;
+}
+
+:root {
+    --instagram-color: #C13584;
+    --spotify-color:#1DB954;
+    --storygraph-color: #2C2E2E;
+    --chess-color: #769656;
+}
+
+.socials-list a[href*="instagram"] {
+    background-color: var(--instagram-color);
+}
+
+.socials-list a[href*="spotify"] {
+    background-color: var(--spotify-color);
+}
+
+.socials-list a[href*="storygraph"] {
+    background-color: var(--storygraph-color);
+}
+
+.socials-list a[href*="chess"] {
+    background-color: var(--chess-color);
+}
+
+.socials-list a:hover {
+    filter: brightness(0.8);
+    transform: scale(1.05);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-link {
+    color: #aaa;
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #fff
+}
